@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationFindMod'>
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+
+    <match Class='PatchOperationSequence'>
+      <success>Always</success>
+
+      <operations>
+        <li Class='PatchOperationAdd'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_CatMaineCoon']/statBases</xpath>
+
+          <value>
+            <MeleeDodgeChance>0.22</MeleeDodgeChance>
+            <MeleeCritChance>0.11</MeleeCritChance>
+            <MeleeParryChance>0.06</MeleeParryChance>
+          </value>
+        </li>
+
+        <li Class='PatchOperationReplace'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_CatMaineCoon']/tools</xpath>
+
+          <value>
+            <tools>
+              <li Class='CombatExtended.ToolCE'>
+                <label>left claw</label>
+                <capacities>
+                  <li>Scratch</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.1</armorPenetration>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <label>right claw</label>
+                <capacities>
+                  <li>Scratch</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.1</armorPenetration>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <capacities>
+                  <li>Bite</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.2</armorPenetration>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <label>head</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.2</armorPenetration>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              </li>
+            </tools>          
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

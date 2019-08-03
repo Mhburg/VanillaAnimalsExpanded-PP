@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanilla Animals Expanded - Patch Pack</name>
+  <author>Andross</author>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+  <description><![CDATA[Patch pack for Vanilla Animals Expanded that includes patches for A Dog Said and Combat Extended for the current releases (Livestock - Cats & Dogs).
+
+- This pack is incompatible with Thecc's VAE Livestock CE patch because it does the same thing only that this one has all the tools (body parts) patched your choice.
+
+  <b>Contains patches for:</b>
+  A Dog Said
+  Combat Extended
+  
+  <b>Credits:</b>
+  Oskar Potocki - Vanilla Animals Expanded
+  Animal Collab Proj - Used some of their numbers]]></description>
+</ModMetaData>

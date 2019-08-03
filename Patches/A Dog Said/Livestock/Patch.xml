@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationFindMod'>
+    <mods>
+      <li>A Dog Said... Animal Prosthetics</li>
+    </mods>
+
+    <match Class='PatchOperationSequence'>
+      <success>Always</success>
+
+      <operations>
+        <!-- Body Parts -->
+        <li Class='PatchOperationAdd'>
+          <xpath>Defs/RecipeDef[
+            defName = 'InstallNoseAnimalSimple' or
+            defName = 'InstallEarAnimalSimple' or
+            defName = 'InstallEarAnimalBionic' or
+            defName = 'InstallPowerClawAnimal' or
+            defName = 'InstallPegLegAnimal' or
+            defName = 'InstallSimpleProstheticLegAnimal' or
+            defName = 'InstallBionicLegAnimal' or
+            defName = 'InstallJawAnimalSimple' or
+            defName = 'InstallJawAnimalBionic' or
+            defName = 'InstallSimpleProstheticTailAnimal']/recipeUsers</xpath>
+
+          <value>
+            <li>AEXP_Duck</li>
+            <li>AEXP_Bison</li>
+            <li>AEXP_Goat</li>
+            <li>AEXP_Goose</li>
+            <li>AEXP_Sheep</li>
+            <li>AEXP_Horse</li>
+            <li>AEXP_Yak</li>
+            <li>AEXP_GuineaPig</li>
+            <li>AEXP_Donkey</li>
+          </value>
+        </li>
+
+        <!-- Internals-->
+        <li Class='PatchOperationAdd'>
+          <xpath>Defs/RecipeDef[
+            defName = 'InstallSpineAnimalSimple' or
+            defName = 'InstallSpineAnimalBionic' or
+            defName = 'InstallAnimalBrainStimulator' or
+            defName = 'InstallBionicAnimalHeart' or 
+            defName = 'InstallBionicAnimalLung' or 
+            defName = 'InstallBionicAnimalLiver' or 
+            defName = 'InstallBionicAnimalKidney' or
+            defName = 'InstallBionicAnimalStomach' or
+            defName = 'InstallBionicEyeAnimal']/recipeUsers</xpath>
+
+          <value>
+            <li>AEXP_Duck</li>
+            <li>AEXP_Bison</li>
+            <li>AEXP_Goat</li>
+            <li>AEXP_Goose</li>
+            <li>AEXP_Sheep</li>
+            <li>AEXP_Horse</li>
+            <li>AEXP_Yak</li>
+            <li>AEXP_GuineaPig</li>
+            <li>AEXP_Donkey</li>
+          </value>
+        </li>
+
+        <!-- Old Wounds -->
+        <li Class='PatchOperationAdd'>
+          <xpath>Defs/RecipeDef[@Name = 'OldWoundsAnimal']/recipeUsers</xpath>
+
+          <value>
+            <li>AEXP_Duck</li>
+            <li>AEXP_Bison</li>
+            <li>AEXP_Goat</li>
+            <li>AEXP_Goose</li>
+            <li>AEXP_Sheep</li>
+            <li>AEXP_Horse</li>
+            <li>AEXP_Yak</li>
+            <li>AEXP_GuineaPig</li>
+            <li>AEXP_Donkey</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>VanillaAnimalsExpanded-PP</identifier>
+  <version>1.0.0</version>
+  <dependencies>
+    <li>1823540489</li>
+    <li>1700683323</li>
+  </dependencies>
+  <incompatibleWith>
+    <li>1722706340</li>
+  </incompatibleWith>
+  <loadBefore></loadBefore>
+  <loadAfter>
+    <li>746425621</li>
+    <li>1631756268</li>
+    <li>1823540489</li>
+    <li>1700683323</li>
+  </loadAfter>
+  <suggests></suggests>
+  <showCrossPromotions>true</showCrossPromotions>
+  <manifestUri>https://rawgit.com/Onigamii/VanillaAnimalsExpanded-PP/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/Onigamii/VanillaAnimalsExpanded-PP/releases/latest</downloadUri>
+</Manifest>
