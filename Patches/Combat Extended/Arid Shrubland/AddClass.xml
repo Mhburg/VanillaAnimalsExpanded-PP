@@ -31,9 +31,7 @@
 
         <!-- Quadruped Low -->
         <li Class='PatchOperationAddModExtension'>
-          <xpath>
-            Defs/ThingDef[defName = 'AEXP_Crocodile']
-          </xpath>
+          <xpath>Defs/ThingDef[defName = 'AEXP_Crocodile']</xpath>
 
           <value>
             <li Class="CombatExtended.RacePropertiesExtensionCE">

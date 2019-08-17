@@ -14,9 +14,9 @@
           <xpath>Defs/ThingDef[defName = 'AEXP_Crocodile']/statBases</xpath>
 
           <value>
-            <MeleeDodgeChance>0.010</MeleeDodgeChance>
+            <MeleeDodgeChance>0.16</MeleeDodgeChance>
             <MeleeCritChance>0.13</MeleeCritChance>
-            <MeleeParryChance>0.12</MeleeParryChance>
+            <MeleeParryChance>0.09</MeleeParryChance>
           </value>
         </li>
 
@@ -32,20 +32,19 @@
                 </capacities>
                 <power>8</power>
                 <cooldownTime>1.5</cooldownTime>
-                <armorPenetration>0.2</armorPenetration>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <armorPenetration>0.5</armorPenetration>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
               </li>
 
               <li Class='CombatExtended.ToolCE'>
                 <label>right claw</label>
                 <capacities>
-                  <li>Blunt</li>
-                  <li>Poke</li>
+                  <li>Scratch</li>
                 </capacities>
                 <power>8</power>
                 <cooldownTime>1.5</cooldownTime>
-                <armorPenetration>0.2</armorPenetration>
-                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+                <armorPenetration>0.5</armorPenetration>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
               </li>
 
               <li Class='CombatExtended.ToolCE'>
@@ -74,7 +73,7 @@
                 </capacities>
                 <power>5</power>
                 <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.1</armorPenetration>
+                <armorPenetration>0.4</armorPenetration>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
               </li>
             </tools>

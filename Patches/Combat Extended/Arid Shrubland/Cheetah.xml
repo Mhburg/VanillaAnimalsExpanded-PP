@@ -33,7 +33,7 @@
                 <power>8</power>
                 <cooldownTime>1.5</cooldownTime>
                 <armorPenetration>0.2</armorPenetration>
-                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
               </li>
 
               <li Class='CombatExtended.ToolCE'>
@@ -45,7 +45,7 @@
                 <power>8</power>
                 <cooldownTime>1.5</cooldownTime>
                 <armorPenetration>0.2</armorPenetration>
-                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
               </li>
 
               <li Class='CombatExtended.ToolCE'>
