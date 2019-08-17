@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <identifier>VanillaAnimalsExpanded-PP</identifier>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <dependencies>
     <li>1823540489</li>
     <li>1700683323</li>
+    <li>1836900626</li>
   </dependencies>
   <incompatibleWith>
     <li>1722706340</li>
@@ -15,6 +16,7 @@
     <li>1631756268</li>
     <li>1823540489</li>
     <li>1700683323</li>
+    <li>1836900626</li>
   </loadAfter>
   <suggests></suggests>
   <showCrossPromotions>true</showCrossPromotions>

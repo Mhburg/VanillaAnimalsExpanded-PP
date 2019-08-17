@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationFindMod'>
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+
+    <match Class='PatchOperationSequence'>
+      <success>Always</success>
+
+      <operations>
+        <li Class='PatchOperationAdd'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_Hippopotamus']/statBases</xpath>
+
+          <value>
+            <MeleeDodgeChance>0.08</MeleeDodgeChance>
+            <MeleeCritChance>0.64</MeleeCritChance>
+            <MeleeParryChance>0.45</MeleeParryChance>
+          </value>
+        </li>
+
+        <li Class='PatchOperationReplace'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_Hippopotamus']/tools</xpath>
+
+          <value>
+            <tools>
+              <li Class='CombatExtended.ToolCE'>
+                <label>left hoof</label>
+                <capacities>
+                  <li>Blunt</li>
+                  <li>Poke</li>
+                </capacities>
+                <power>16.9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.12</armorPenetration>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <label>right hoof</label>
+                <capacities>
+                  <li>Blunt</li>
+                  <li>Poke</li>
+                </capacities>
+                <power>16.9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.12</armorPenetration>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <label>bite</label>
+                <capacities>
+                  <li>Bite</li>
+                </capacities>
+                <power>24</power>
+                <cooldownTime>2.5</cooldownTime>
+                <armorPenetration>0.5</armorPenetration>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              </li>
+
+              <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2.5</cooldownTime>
+                <armorPenetration>0.25</armorPenetration>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

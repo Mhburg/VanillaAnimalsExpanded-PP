@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationFindMod'>
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+
+    <match Class='PatchOperationSequence'>
+      <success>Always</success>
+
+      <operations>
+        <li Class='PatchOperationAdd'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_Crocodile']/statBases</xpath>
+
+          <value>
+            <MeleeDodgeChance>0.010</MeleeDodgeChance>
+            <MeleeCritChance>0.13</MeleeCritChance>
+            <MeleeParryChance>0.12</MeleeParryChance>
+          </value>
+        </li>
+
+        <li Class='PatchOperationReplace'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_Crocodile']/tools</xpath>
+
+          <value>
+            <tools>
+              <li Class='CombatExtended.ToolCE'>
+                <label>left claw</label>
+                <capacities>
+                  <li>Scratch</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.2</armorPenetration>
+                <linkedBodyPartsGroup>FrontLeftClaw</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <label>right claw</label>
+                <capacities>
+                  <li>Blunt</li>
+                  <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.2</armorPenetration>
+                <linkedBodyPartsGroup>FrontRightClaw</linkedBodyPartsGroup>
+              </li>
+
+              <li Class='CombatExtended.ToolCE'>
+                <label>bite</label>
+                <capacities>
+                  <li>Bite</li>
+                </capacities>
+                <power>22.6</power>
+                <cooldownTime>2.5</cooldownTime>
+                <armorPenetration>0.5</armorPenetration>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                  <extraMeleeDamages>
+                    <li>
+                      <def>Stun</def>
+                      <amount>14</amount>
+                    </li>
+                  </extraMeleeDamages>
+                </surpriseAttack>
+              </li>
+
+              <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.1</armorPenetration>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
