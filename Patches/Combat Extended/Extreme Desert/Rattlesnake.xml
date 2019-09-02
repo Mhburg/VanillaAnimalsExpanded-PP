@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
+
+    <operations>
+      <!-- Check for CE & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+        <yourMod>Vanilla Animals Expanded — Extreme Desert</yourMod>
+      </li>
+
+      <!-- Rattlesnake -->
+      <li Class='PatchOperationAdd'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Rattlesnake']/statBases</xpath>
+
+        <value>
+          <MeleeDodgeChance>0.14</MeleeDodgeChance>
+          <MeleeCritChance>0.12</MeleeCritChance>
+          <MeleeParryChance>0.07</MeleeParryChance>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Rattlesnake']/tools</xpath>
+
+        <value>
+          <tools>
+            <li Class='CombatExtended.ToolCE'>
+              <label>fangs</label>
+              <capacities>
+                <li>AEXP_RattleSnakeVenomousBite</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2.4</cooldownTime>
+              <armorPenetration>0.19</armorPenetration>
+              <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+              <surpriseAttack>
+                <extraMeleeDamages>
+                  <li>
+                    <def>Stun</def>
+                    <amount>14</amount>
+                  </li>
+                </extraMeleeDamages>
+              </surpriseAttack>
+            </li>
+
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>3</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetration>0.10</armorPenetration>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

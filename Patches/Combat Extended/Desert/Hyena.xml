@@ -8,47 +8,45 @@
       <!-- Check for CE & VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>Combat Extended</modName>
-        <yourMod>Vanilla Animals Expanded — Arid Shrubland</yourMod>
+        <yourMod>Vanilla Animals Expanded — Desert</yourMod>
       </li>
 
-      <!-- Giraffe -->
+      <!-- Hyena -->
       <li Class='PatchOperationAdd'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Giraffe']/statBases</xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Hyena']/statBases</xpath>
 
         <value>
           <MeleeDodgeChance>0.08</MeleeDodgeChance>
-          <MeleeCritChance>0.61</MeleeCritChance>
-          <MeleeParryChance>0.37</MeleeParryChance>
+          <MeleeCritChance>0.18</MeleeCritChance>
+          <MeleeParryChance>0.15</MeleeParryChance>
         </value>
       </li>
 
       <li Class='PatchOperationReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Giraffe']/tools</xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Hyena']/tools</xpath>
 
         <value>
           <tools>
             <li Class='CombatExtended.ToolCE'>
-              <label>left hoof</label>
+              <label>left claw</label>
               <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
+                <li>Scratch</li>
               </capacities>
-              <power>14</power>
+              <power>7.7</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.12</armorPenetration>
-              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              <armorPenetration>0.2</armorPenetration>
+              <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
             </li>
 
             <li Class='CombatExtended.ToolCE'>
-              <label>right hoof</label>
+              <label>right claw</label>
               <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
+                <li>Scratch</li>
               </capacities>
-              <power>14</power>
+              <power>7.7</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.12</armorPenetration>
-              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+              <armorPenetration>0.2</armorPenetration>
+              <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
             </li>
 
             <li Class='CombatExtended.ToolCE'>
@@ -56,9 +54,9 @@
               <capacities>
                 <li>Bite</li>
               </capacities>
-              <power>8</power>
+              <power>16.2</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.5</armorPenetration>
+              <armorPenetration>0.7</armorPenetration>
               <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
 
@@ -68,8 +66,8 @@
                 <li>Blunt</li>
               </capacities>
               <power>6</power>
-              <cooldownTime>2.5</cooldownTime>
-              <armorPenetration>0.25</armorPenetration>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetration>0.1</armorPenetration>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
             </li>
           </tools>

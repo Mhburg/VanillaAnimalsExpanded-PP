@@ -8,19 +8,12 @@
       <!-- Check for CE & VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>Combat Extended</modName>
-        <yourMod>Vanilla Animals Expanded — Livestock</yourMod>
+        <yourMod>Vanilla Animals Expanded — Desert</yourMod>
       </li>
 
       <!-- Quadruped -->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>
-          Defs/ThingDef[
-            defName = 'AEXP_Bison' or
-            defName = 'AEXP_Goat' or
-            defName = 'AEXP_Horse' or
-            defName = 'AEXP_Donkey' or
-            defName = 'AEXP_Yak']
-        </xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Hyena' or defName = 'AEXP_Lion']</xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -31,26 +24,11 @@
 
       <!-- Quadruped Low -->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_GuineaPig']</xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_DesertTortoise' or defName = 'AEXP_GilaMonster']</xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
             <bodyShape>QuadrupedLow</bodyShape>
-          </li>
-        </value>
-      </li>
-
-      <!-- Bird Like -->
-      <li Class='PatchOperationAddModExtension'>
-        <xpath>
-          Defs/ThingDef[
-            defName = 'AEXP_Goose' or
-            defName = 'AEXP_Duck']
-        </xpath>
-
-        <value>
-          <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>Birdlike</bodyShape>
           </li>
         </value>
       </li>

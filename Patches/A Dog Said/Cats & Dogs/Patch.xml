@@ -1,131 +1,131 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <Patch>
 
-  <Operation Class='PatchOperationFindMod'>
-    <mods>
-      <li>A Dog Said... Animal Prosthetics</li>
-    </mods>
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
 
-    <match Class='PatchOperationSequence'>
-      <success>Always</success>
-      
-      <operations>
-        <!-- Body Parts -->
-        <li Class='PatchOperationAdd'>
-          <xpath>
-            Defs/RecipeDef[
-              defName = 'InstallNoseAnimalSimple' or
-              defName = 'InstallEarAnimalSimple' or
-              defName = 'InstallEarAnimalBionic' or
-              defName = 'InstallPowerClawAnimal' or
-              defName = 'InstallPegLegAnimal' or
-              defName = 'InstallSimpleProstheticLegAnimal' or
-              defName = 'InstallBionicLegAnimal' or
-              defName = 'InstallJawAnimalSimple' or
-              defName = 'InstallJawAnimalBionic' or
-              defName = 'InstallSimpleProstheticTailAnimal']/recipeUsers
-          </xpath>
+    <operations>
+      <!-- Check for ADS & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>A Dog Said... Animal Prosthetics</modName>
+        <yourMod>Vanilla Animals Expanded — Cats and Dogs</yourMod>
+      </li>
 
-          <value>
-            <!-- Dogs -->
-            <li>AEXP_Beagle</li>
-            <li>AEXP_Chihuahua</li>
-            <li>AEXP_Corgi</li>
-            <li>AEXP_FrenchBulldog</li>
-            <li>AEXP_GermanShepherd</li>
-            <li>AEXP_GreatDane</li>
-            <li>AEXP_Poodle</li>
-            <li>AEXP_Pug</li>
-            <li>AEXP_Rottweiler</li>
-            <li>AEXP_Shih-Tzu</li>
-            <li>AEXP_WelshTerrier</li>
-            <!-- Cats -->
-            <li>AEXP_CatAbyssinian</li>
-            <li>AEXP_CatBengal</li>
-            <li>AEXP_CatBritishShorthair</li>
-            <li>AEXP_CatMaineCoon</li>
-            <li>AEXP_CatMunchkin</li>
-            <li>AEXP_CatNorwegianForest</li>
-            <li>AEXP_CatPersian</li>
-            <li>AEXP_CatSiamese</li>
-            <li>AEXP_CatSomali</li>
-            <li>AEXP_CatSphynx</li>
-          </value>
-        </li>
+      <!-- Body Parts -->
+      <li Class='PatchOperationAdd'>
+        <xpath>
+          Defs/RecipeDef[
+            defName = 'InstallNoseAnimalSimple' or
+            defName = 'InstallEarAnimalSimple' or
+            defName = 'InstallEarAnimalBionic' or
+            defName = 'InstallPowerClawAnimal' or
+            defName = 'InstallPegLegAnimal' or
+            defName = 'InstallSimpleProstheticLegAnimal' or
+            defName = 'InstallBionicLegAnimal' or
+            defName = 'InstallJawAnimalSimple' or
+            defName = 'InstallJawAnimalBionic' or
+            defName = 'InstallSimpleProstheticTailAnimal']/recipeUsers
+        </xpath>
 
-        <!-- Internals-->
-        <li Class='PatchOperationAdd'>
-          <xpath>
-            Defs/RecipeDef[
-              defName = 'InstallSpineAnimalSimple' or
-              defName = 'InstallSpineAnimalBionic' or
-              defName = 'InstallAnimalBrainStimulator' or
-              defName = 'InstallBionicAnimalHeart' or 
-              defName = 'InstallBionicAnimalLung' or 
-              defName = 'InstallBionicAnimalLiver' or 
-              defName = 'InstallBionicAnimalKidney' or
-              defName = 'InstallBionicAnimalStomach' or
-              defName = 'InstallBionicEyeAnimal']/recipeUsers
-          </xpath>
+        <value>
+          <!-- Dogs -->
+          <li>AEXP_Beagle</li>
+          <li>AEXP_Chihuahua</li>
+          <li>AEXP_Corgi</li>
+          <li>AEXP_FrenchBulldog</li>
+          <li>AEXP_GermanShepherd</li>
+          <li>AEXP_GreatDane</li>
+          <li>AEXP_Poodle</li>
+          <li>AEXP_Pug</li>
+          <li>AEXP_Rottweiler</li>
+          <li>AEXP_Shih-Tzu</li>
+          <li>AEXP_WelshTerrier</li>
+          <!-- Cats -->
+          <li>AEXP_CatAbyssinian</li>
+          <li>AEXP_CatBengal</li>
+          <li>AEXP_CatBritishShorthair</li>
+          <li>AEXP_CatMaineCoon</li>
+          <li>AEXP_CatMunchkin</li>
+          <li>AEXP_CatNorwegianForest</li>
+          <li>AEXP_CatPersian</li>
+          <li>AEXP_CatSiamese</li>
+          <li>AEXP_CatSomali</li>
+          <li>AEXP_CatSphynx</li>
+        </value>
+      </li>
 
-          <value>
-            <!-- Dogs -->
-            <li>AEXP_Beagle</li>
-            <li>AEXP_Chihuahua</li>
-            <li>AEXP_Corgi</li>
-            <li>AEXP_FrenchBulldog</li>
-            <li>AEXP_GermanShepherd</li>
-            <li>AEXP_GreatDane</li>
-            <li>AEXP_Poodle</li>
-            <li>AEXP_Pug</li>
-            <li>AEXP_Rottweiler</li>
-            <li>AEXP_Shih-Tzu</li>
-            <li>AEXP_WelshTerrier</li>
-            <!-- Cats -->
-            <li>AEXP_CatAbyssinian</li>
-            <li>AEXP_CatBengal</li>
-            <li>AEXP_CatBritishShorthair</li>
-            <li>AEXP_CatMaineCoon</li>
-            <li>AEXP_CatMunchkin</li>
-            <li>AEXP_CatNorwegianForest</li>
-            <li>AEXP_CatPersian</li>
-            <li>AEXP_CatSiamese</li>
-            <li>AEXP_CatSomali</li>
-            <li>AEXP_CatSphynx</li>
-          </value>
-        </li>
+      <!-- Internals-->
+      <li Class='PatchOperationAdd'>
+        <xpath>
+          Defs/RecipeDef[
+            defName = 'InstallSpineAnimalSimple' or
+            defName = 'InstallSpineAnimalBionic' or
+            defName = 'InstallAnimalBrainStimulator' or
+            defName = 'InstallBionicAnimalHeart' or 
+            defName = 'InstallBionicAnimalLung' or 
+            defName = 'InstallBionicAnimalLiver' or 
+            defName = 'InstallBionicAnimalKidney' or
+            defName = 'InstallBionicAnimalStomach' or
+            defName = 'InstallBionicEyeAnimal']/recipeUsers
+        </xpath>
 
-        <!-- Old Wounds -->
-        <li Class='PatchOperationAdd'>
-          <xpath>Defs/RecipeDef[@Name = 'OldWoundsAnimal']/recipeUsers</xpath>
+        <value>
+          <!-- Dogs -->
+          <li>AEXP_Beagle</li>
+          <li>AEXP_Chihuahua</li>
+          <li>AEXP_Corgi</li>
+          <li>AEXP_FrenchBulldog</li>
+          <li>AEXP_GermanShepherd</li>
+          <li>AEXP_GreatDane</li>
+          <li>AEXP_Poodle</li>
+          <li>AEXP_Pug</li>
+          <li>AEXP_Rottweiler</li>
+          <li>AEXP_Shih-Tzu</li>
+          <li>AEXP_WelshTerrier</li>
+          <!-- Cats -->
+          <li>AEXP_CatAbyssinian</li>
+          <li>AEXP_CatBengal</li>
+          <li>AEXP_CatBritishShorthair</li>
+          <li>AEXP_CatMaineCoon</li>
+          <li>AEXP_CatMunchkin</li>
+          <li>AEXP_CatNorwegianForest</li>
+          <li>AEXP_CatPersian</li>
+          <li>AEXP_CatSiamese</li>
+          <li>AEXP_CatSomali</li>
+          <li>AEXP_CatSphynx</li>
+        </value>
+      </li>
 
-          <value>
-            <!-- Dogs -->
-            <li>AEXP_Beagle</li>
-            <li>AEXP_Chihuahua</li>
-            <li>AEXP_Corgi</li>
-            <li>AEXP_FrenchBulldog</li>
-            <li>AEXP_GermanShepherd</li>
-            <li>AEXP_GreatDane</li>
-            <li>AEXP_Poodle</li>
-            <li>AEXP_Pug</li>
-            <li>AEXP_Rottweiler</li>
-            <li>AEXP_Shih-Tzu</li>
-            <li>AEXP_WelshTerrier</li>
-            <!-- Cats -->
-            <li>AEXP_CatAbyssinian</li>
-            <li>AEXP_CatBengal</li>
-            <li>AEXP_CatBritishShorthair</li>
-            <li>AEXP_CatMaineCoon</li>
-            <li>AEXP_CatMunchkin</li>
-            <li>AEXP_CatNorwegianForest</li>
-            <li>AEXP_CatPersian</li>
-            <li>AEXP_CatSiamese</li>
-            <li>AEXP_CatSomali</li>
-            <li>AEXP_CatSphynx</li>
-          </value>
-        </li>
-      </operations>
-    </match>
+      <!-- Old Wounds -->
+      <li Class='PatchOperationAdd'>
+        <xpath>Defs/RecipeDef[@Name = 'OldWoundsAnimal']/recipeUsers</xpath>
+
+        <value>
+          <!-- Dogs -->
+          <li>AEXP_Beagle</li>
+          <li>AEXP_Chihuahua</li>
+          <li>AEXP_Corgi</li>
+          <li>AEXP_FrenchBulldog</li>
+          <li>AEXP_GermanShepherd</li>
+          <li>AEXP_GreatDane</li>
+          <li>AEXP_Poodle</li>
+          <li>AEXP_Pug</li>
+          <li>AEXP_Rottweiler</li>
+          <li>AEXP_Shih-Tzu</li>
+          <li>AEXP_WelshTerrier</li>
+          <!-- Cats -->
+          <li>AEXP_CatAbyssinian</li>
+          <li>AEXP_CatBengal</li>
+          <li>AEXP_CatBritishShorthair</li>
+          <li>AEXP_CatMaineCoon</li>
+          <li>AEXP_CatMunchkin</li>
+          <li>AEXP_CatNorwegianForest</li>
+          <li>AEXP_CatPersian</li>
+          <li>AEXP_CatSiamese</li>
+          <li>AEXP_CatSomali</li>
+          <li>AEXP_CatSphynx</li>
+        </value>
+      </li>
+    </operations>
   </Operation>
 </Patch>

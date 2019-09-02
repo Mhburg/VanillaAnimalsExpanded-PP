@@ -1,80 +1,80 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <Patch>
 
-  <Operation Class='PatchOperationFindMod'>
-    <mods>
-      <li>Combat Extended</li>
-    </mods>
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
 
-    <match Class='PatchOperationSequence'>
-      <success>Always</success>
+    <operations>
+      <!-- Check for CE & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+        <yourMod>Vanilla Animals Expanded — Arid Shrubland</yourMod>
+      </li>
 
-      <operations>
-        <li Class='PatchOperationAdd'>
-          <xpath>Defs/ThingDef[defName = 'AEXP_Wildebeest']/statBases</xpath>
+      <!-- Wildebeest -->
+      <li Class='PatchOperationAdd'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Wildebeest']/statBases</xpath>
 
-          <value>
-            <MeleeDodgeChance>0.05</MeleeDodgeChance>
-            <MeleeCritChance>0.13</MeleeCritChance>
-            <MeleeParryChance>0.12</MeleeParryChance>
-          </value>
-        </li>
+        <value>
+          <MeleeDodgeChance>0.05</MeleeDodgeChance>
+          <MeleeCritChance>0.13</MeleeCritChance>
+          <MeleeParryChance>0.12</MeleeParryChance>
+        </value>
+      </li>
 
-        <li Class='PatchOperationReplace'>
-          <xpath>Defs/ThingDef[defName = 'AEXP_Wildebeest']/tools</xpath>
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Wildebeest']/tools</xpath>
 
-          <value>
-            <tools>
-              <li Class='CombatExtended.ToolCE'>
-                <label>left hoof</label>
-                <capacities>
-                  <li>Blunt</li>
-                  <li>Poke</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>1.5</cooldownTime>
-                <armorPenetration>0.2</armorPenetration>
-                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-              </li>
+        <value>
+          <tools>
+            <li Class='CombatExtended.ToolCE'>
+              <label>left hoof</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>8</power>
+              <cooldownTime>1.5</cooldownTime>
+              <armorPenetration>0.2</armorPenetration>
+              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
 
-              <li Class='CombatExtended.ToolCE'>
-                <label>right hoof</label>
-                <capacities>
-                  <li>Blunt</li>
-                  <li>Poke</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>1.5</cooldownTime>
-                <armorPenetration>0.2</armorPenetration>
-                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-              </li>
+            <li Class='CombatExtended.ToolCE'>
+              <label>right hoof</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>8</power>
+              <cooldownTime>1.5</cooldownTime>
+              <armorPenetration>0.2</armorPenetration>
+              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
 
-              <li Class='CombatExtended.ToolCE'>
-                <label>bite</label>
-                <capacities>
-                  <li>Bite</li>
-                </capacities>
-                <power>8.8</power>
-                <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.5</armorPenetration>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-              </li>
+            <li Class='CombatExtended.ToolCE'>
+              <label>bite</label>
+              <capacities>
+                <li>Bite</li>
+              </capacities>
+              <power>8.8</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetration>0.5</armorPenetration>
+              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
 
-              <li Class="CombatExtended.ToolCE">
-                <label>head</label>
-                <capacities>
-                  <li>Blunt</li>
-                </capacities>
-                <power>12</power>
-                <cooldownTime>2.5</cooldownTime>
-                <armorPenetration>0.1</armorPenetration>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-              </li>
-            </tools>
-          </value>
-        </li>
-      </operations>
-    </match>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2.5</cooldownTime>
+              <armorPenetration>0.1</armorPenetration>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
   </Operation>
-
 </Patch>

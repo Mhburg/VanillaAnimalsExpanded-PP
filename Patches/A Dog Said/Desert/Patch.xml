@@ -8,7 +8,7 @@
       <!-- Check for ADS & VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>A Dog Said... Animal Prosthetics</modName>
-        <yourMod>Vanilla Animals Expanded — Livestock</yourMod>
+        <yourMod>Vanilla Animals Expanded — Desert</yourMod>
       </li>
 
       <!-- Body Parts -->
@@ -28,15 +28,10 @@
         </xpath>
 
         <value>
-          <li>AEXP_Duck</li>
-          <li>AEXP_Bison</li>
-          <li>AEXP_Goat</li>
-          <li>AEXP_Goose</li>
-          <li>AEXP_Sheep</li>
-          <li>AEXP_Horse</li>
-          <li>AEXP_Yak</li>
-          <li>AEXP_GuineaPig</li>
-          <li>AEXP_Donkey</li>
+          <li>AEXP_Hyena</li>
+          <li>AEXP_DesertTortoise</li>
+          <li>AEXP_Lion</li>
+          <li>AEXP_GilaMonster</li>
         </value>
       </li>
 
@@ -56,15 +51,10 @@
         </xpath>
 
         <value>
-          <li>AEXP_Duck</li>
-          <li>AEXP_Bison</li>
-          <li>AEXP_Goat</li>
-          <li>AEXP_Goose</li>
-          <li>AEXP_Sheep</li>
-          <li>AEXP_Horse</li>
-          <li>AEXP_Yak</li>
-          <li>AEXP_GuineaPig</li>
-          <li>AEXP_Donkey</li>
+          <li>AEXP_Hyena</li>
+          <li>AEXP_DesertTortoise</li>
+          <li>AEXP_Lion</li>
+          <li>AEXP_GilaMonster</li>
         </value>
       </li>
 
@@ -73,15 +63,10 @@
         <xpath>Defs/RecipeDef[@Name = 'OldWoundsAnimal']/recipeUsers</xpath>
 
         <value>
-          <li>AEXP_Duck</li>
-          <li>AEXP_Bison</li>
-          <li>AEXP_Goat</li>
-          <li>AEXP_Goose</li>
-          <li>AEXP_Sheep</li>
-          <li>AEXP_Horse</li>
-          <li>AEXP_Yak</li>
-          <li>AEXP_GuineaPig</li>
-          <li>AEXP_Donkey</li>
+          <li>AEXP_Hyena</li>
+          <li>AEXP_DesertTortoise</li>
+          <li>AEXP_Lion</li>
+          <li>AEXP_GilaMonster</li>
         </value>
       </li>
     </operations>

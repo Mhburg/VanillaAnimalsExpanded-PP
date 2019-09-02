@@ -1,18 +1,20 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <Patch>
 
-  <Operation Class='PatchOperationFindMod'>
-    <mods>
-      <li>A Dog Said... Animal Prosthetics</li>
-    </mods>
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
 
-    <match Class='PatchOperationSequence'>
-      <success>Always</success>
+    <operations>
+      <!-- Check for ADS & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>A Dog Said... Animal Prosthetics</modName>
+        <yourMod>Vanilla Animals Expanded — Arid Shrubland</yourMod>
+      </li>
 
-      <operations>
-        <!-- Body Parts -->
-        <li Class='PatchOperationAdd'>
-          <xpath>Defs/RecipeDef[
+      <!-- Body Parts -->
+      <li Class='PatchOperationAdd'>
+        <xpath>
+          Defs/RecipeDef[
             defName = 'InstallNoseAnimalSimple' or
             defName = 'InstallEarAnimalSimple' or
             defName = 'InstallEarAnimalBionic' or
@@ -22,22 +24,24 @@
             defName = 'InstallBionicLegAnimal' or
             defName = 'InstallJawAnimalSimple' or
             defName = 'InstallJawAnimalBionic' or
-            defName = 'InstallSimpleProstheticTailAnimal']/recipeUsers</xpath>
+            defName = 'InstallSimpleProstheticTailAnimal']/recipeUsers
+        </xpath>
 
-          <value>
-            <li>AEXP_Coyote</li>
-            <li>AEXP_Giraffe</li>
-            <li>AEXP_Hippopotamus</li>
-            <li>AEXP_Zebra</li>
-            <li>AEXP_Wildebeest</li>
-            <li>AEXP_Crocodile</li>
-            <li>AEXP_Cheetah</li>
-          </value>
-        </li>
+        <value>
+          <li>AEXP_Coyote</li>
+          <li>AEXP_Giraffe</li>
+          <li>AEXP_Hippopotamus</li>
+          <li>AEXP_Zebra</li>
+          <li>AEXP_Wildebeest</li>
+          <li>AEXP_Crocodile</li>
+          <li>AEXP_Cheetah</li>
+        </value>
+      </li>
 
-        <!-- Internals-->
-        <li Class='PatchOperationAdd'>
-          <xpath>Defs/RecipeDef[
+      <!-- Internals-->
+      <li Class='PatchOperationAdd'>
+        <xpath>
+          Defs/RecipeDef[
             defName = 'InstallSpineAnimalSimple' or
             defName = 'InstallSpineAnimalBionic' or
             defName = 'InstallAnimalBrainStimulator' or
@@ -46,34 +50,34 @@
             defName = 'InstallBionicAnimalLiver' or 
             defName = 'InstallBionicAnimalKidney' or
             defName = 'InstallBionicAnimalStomach' or
-            defName = 'InstallBionicEyeAnimal']/recipeUsers</xpath>
+            defName = 'InstallBionicEyeAnimal']/recipeUsers
+        </xpath>
 
-          <value>
-            <li>AEXP_Coyote</li>
-            <li>AEXP_Giraffe</li>
-            <li>AEXP_Hippopotamus</li>
-            <li>AEXP_Zebra</li>
-            <li>AEXP_Wildebeest</li>
-            <li>AEXP_Crocodile</li>
-            <li>AEXP_Cheetah</li>
-          </value>
-        </li>
+        <value>
+          <li>AEXP_Coyote</li>
+          <li>AEXP_Giraffe</li>
+          <li>AEXP_Hippopotamus</li>
+          <li>AEXP_Zebra</li>
+          <li>AEXP_Wildebeest</li>
+          <li>AEXP_Crocodile</li>
+          <li>AEXP_Cheetah</li>
+        </value>
+      </li>
 
-        <!-- Old Wounds -->
-        <li Class='PatchOperationAdd'>
-          <xpath>Defs/RecipeDef[@Name = 'OldWoundsAnimal']/recipeUsers</xpath>
+      <!-- Old Wounds -->
+      <li Class='PatchOperationAdd'>
+        <xpath>Defs/RecipeDef[@Name = 'OldWoundsAnimal']/recipeUsers</xpath>
 
-          <value>
-            <li>AEXP_Coyote</li>
-            <li>AEXP_Giraffe</li>
-            <li>AEXP_Hippopotamus</li>
-            <li>AEXP_Zebra</li>
-            <li>AEXP_Wildebeest</li>
-            <li>AEXP_Crocodile</li>
-            <li>AEXP_Cheetah</li>
-          </value>
-        </li>
-      </operations>
-    </match>
+        <value>
+          <li>AEXP_Coyote</li>
+          <li>AEXP_Giraffe</li>
+          <li>AEXP_Hippopotamus</li>
+          <li>AEXP_Zebra</li>
+          <li>AEXP_Wildebeest</li>
+          <li>AEXP_Crocodile</li>
+          <li>AEXP_Cheetah</li>
+        </value>
+      </li>
+    </operations>
   </Operation>
 </Patch>

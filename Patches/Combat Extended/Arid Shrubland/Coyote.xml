@@ -1,16 +1,18 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <Patch>
 
-  <Operation Class='PatchOperationFindMod'>
-    <mods>
-      <li>Combat Extended</li>
-    </mods>
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
 
-    <match Class='PatchOperationSequence'>
-      <success>Always</success>
+    <operations>
+      <!-- Check for CE & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+        <yourMod>Vanilla Animals Expanded — Arid Shrubland</yourMod>
+      </li>
 
-      <operations>
-        <li Class='PatchOperationAdd'>
+      <!-- Coyote -->
+      <li Class='PatchOperationAdd'>
           <xpath>Defs/ThingDef[defName = 'AEXP_Coyote']/statBases</xpath>
 
           <value>
@@ -71,8 +73,6 @@
             </tools>
           </value>
         </li>
-      </operations>
-    </match>
+    </operations>
   </Operation>
-
 </Patch>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
+
+    <operations>
+      <!-- Check for CE & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+        <yourMod>Vanilla Animals Expanded — Desert</yourMod>
+      </li>
+
+      <!-- Desert Tortoise -->
+      <li Class='PatchOperationAdd'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_DesertTortoise']/statBases</xpath>
+
+          <value>
+            <MeleeDodgeChance>0.08</MeleeDodgeChance>
+            <MeleeCritChance>0.18</MeleeCritChance>
+            <MeleeParryChance>0.15</MeleeParryChance>
+          </value>
+        </li>
+
+        <li Class='PatchOperationReplace'>
+          <xpath>Defs/ThingDef[defName = 'AEXP_DesertTortoise']/tools</xpath>
+
+          <value>
+            <tools>
+              <li Class='CombatExtended.ToolCE'>
+                <label>beak</label>
+                <capacities>
+                  <li>Bite</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.2</armorPenetration>
+                <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+              </li>
+
+              <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>2.5</cooldownTime>
+                <armorPenetration>0.1</armorPenetration>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+    </operations>
+  </Operation>
+</Patch>

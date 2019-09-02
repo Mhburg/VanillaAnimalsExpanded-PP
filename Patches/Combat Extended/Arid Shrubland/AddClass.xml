@@ -1,45 +1,45 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <Patch>
 
-  <Operation Class='PatchOperationFindMod'>
-    <mods>
-      <li>Combat Extended</li>
-    </mods>
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
 
-    <match Class='PatchOperationSequence'>
-      <success>Always</success>
+    <operations>
+      <!-- Check for CE & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+        <yourMod>Vanilla Animals Expanded — Arid Shrubland</yourMod>
+      </li>
 
-      <operations>
-        <!-- Quadruped -->
-        <li Class='PatchOperationAddModExtension'>
-          <xpath>
-            Defs/ThingDef[
-              defName = 'AEXP_Coyote' or
-              defName = 'AEXP_Giraffe' or
-              defName = 'AEXP_Hippopotamus' or
-              defName = 'AEXP_Zebra' or
-              defName = 'AEXP_Wildebeest' or
-              defName = 'AEXP_Cheetah']
-          </xpath>
+      <!-- Quadruped -->
+      <li Class='PatchOperationAddModExtension'>
+        <xpath>
+          Defs/ThingDef[
+            defName = 'AEXP_Coyote' or
+            defName = 'AEXP_Giraffe' or
+            defName = 'AEXP_Hippopotamus' or
+            defName = 'AEXP_Zebra' or
+            defName = 'AEXP_Wildebeest' or
+            defName = 'AEXP_Cheetah']
+        </xpath>
 
-          <value>
-            <li Class="CombatExtended.RacePropertiesExtensionCE">
-              <bodyShape>Quadruped</bodyShape>
-            </li>
-          </value>
-        </li>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+          </li>
+        </value>
+      </li>
 
-        <!-- Quadruped Low -->
-        <li Class='PatchOperationAddModExtension'>
-          <xpath>Defs/ThingDef[defName = 'AEXP_Crocodile']</xpath>
+      <!-- Quadruped Low -->
+      <li Class='PatchOperationAddModExtension'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Crocodile']</xpath>
 
-          <value>
-            <li Class="CombatExtended.RacePropertiesExtensionCE">
-              <bodyShape>QuadrupedLow</bodyShape>
-            </li>
-          </value>
-        </li>
-      </operations>
-    </match>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>QuadrupedLow</bodyShape>
+          </li>
+        </value>
+      </li>
+    </operations>
   </Operation>
 </Patch>
