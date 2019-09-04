@@ -8,7 +8,10 @@
       <!-- Check for CE & VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>Combat Extended</modName>
-        <yourMod>Vanilla Animals Expanded — Arid Shrubland</yourMod>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Arid Shrubland</modName>
       </li>
 
       <!-- Crocodile -->

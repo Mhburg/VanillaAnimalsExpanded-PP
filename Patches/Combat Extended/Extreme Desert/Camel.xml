@@ -8,9 +8,11 @@
       <!-- Check for CE & VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>Combat Extended</modName>
-        <yourMod>Vanilla Animals Expanded — Extreme Desert</yourMod>
       </li>
 
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Extreme Desert</modName>
+      </li>
       <!-- Camel -->
       <li Class='PatchOperationAdd'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Camel']/statBases</xpath>

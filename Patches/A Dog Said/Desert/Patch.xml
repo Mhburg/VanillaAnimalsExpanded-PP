@@ -8,7 +8,10 @@
       <!-- Check for ADS & VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>A Dog Said... Animal Prosthetics</modName>
-        <yourMod>Vanilla Animals Expanded — Desert</yourMod>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Desert</modName>
       </li>
 
       <!-- Body Parts -->

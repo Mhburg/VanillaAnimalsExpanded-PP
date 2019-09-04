@@ -5,10 +5,13 @@
     <success>Always</success>
 
     <operations>
-      <!-- Check for CE and VAE -->
+     <!-- Check for CE and VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>Combat Extended</modName>
-        <yourMod>Vanilla Animals Expanded — Cats and Dogs</yourMod>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Cats and Dogs</modName>
       </li>
 
       <li Class='PatchOperationAdd'>

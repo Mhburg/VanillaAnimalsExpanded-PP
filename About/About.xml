@@ -7,12 +7,13 @@
   </supportedVersions>
   <description><![CDATA[Patch pack for Vanilla Animals Expanded that includes patches for A Dog Said and Combat Extended for the current releases of Vanilla Animals Expanded. 
 
-<color='#1E90FF'><b>Changelog:</b></color>
+<color='#1E90FF'>Changelog:</color>
+<b>04 / Sep / 19</b> - Fixed cross reference error with A Dog Said
 <b>02 / Sep / 19</b> - Desert & Extreme Desert Update
 <b>16 / Aug / 19</b> - Arid Shrubland Update
 <b>03 / Aug / 19</b> - Initial Release
   
-<color='#1E90FF'><b>Credits:</b></color>
+<color='#1E90FF'>Credits:</color>
 Oskar Potocki - Vanilla Animals Expanded
 Animal Collab Proj - Used some of their numbers]]></description>
 </ModMetaData>
