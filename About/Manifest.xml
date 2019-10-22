@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <identifier>VanillaAnimalsExpanded-PP</identifier>
-  <version>1.5.0</version>
+  <version>1.5.1</version>
   <showCrossPromotions>true</showCrossPromotions>
   <manifestUri>https://rawgit.com/Onigamii/VanillaAnimalsExpanded-PP/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/Onigamii/VanillaAnimalsExpanded-PP/releases/latest</downloadUri>
