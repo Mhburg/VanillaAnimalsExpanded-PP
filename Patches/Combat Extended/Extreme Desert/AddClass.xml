@@ -20,7 +20,7 @@
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>BirdLike</bodyShape>
+            <bodyShape>Birdlike</bodyShape>
           </li>
         </value>
       </li>
