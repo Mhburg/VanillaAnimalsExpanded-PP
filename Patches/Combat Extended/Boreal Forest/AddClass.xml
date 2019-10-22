@@ -5,40 +5,33 @@
     <success>Always</success>
 
     <operations>
-      <!-- Check for CE & VAE -->
+      <!-- Check for CE and VAE -->
       <li Class='ModCheck.isModLoaded'>
         <modName>Combat Extended</modName>
       </li>
 
       <li Class='ModCheck.isModLoaded'>
-        <modName>Vanilla Animals Expanded — Extreme Desert</modName>
+        <modName>Vanilla Animals Expanded — Boreal Forest</modName>
       </li>
 
-      <!-- Birdlike -->
+      <!-- Quadruped -->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Camel']</xpath>
+        <xpath>
+          Defs/ThingDef[defName = 'AEXP_ArticCoyote']
+        </xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>BirdLike</bodyShape>
-          </li>
-        </value>
-      </li>
-
-      <!-- Quadruped Low-->
-      <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Megascorpion']</xpath>
-
-        <value>
-          <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>QuadrupedLow</bodyShape>
+            <bodyShape>Quadruped</bodyShape>
           </li>
         </value>
       </li>
 
       <!-- Serpentine -->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Rattlesnake']</xpath>
+        <xpath>
+          Defs/ThingDef[defName = 'AEXP_Otter']
+        </xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">

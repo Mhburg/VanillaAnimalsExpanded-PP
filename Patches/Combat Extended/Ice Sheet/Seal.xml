@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
+
+    <operations>
+      <!-- Check for CE and VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Ice Sheet</modName>
+      </li>
+
+      <li Class='PatchOperationAdd'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Seal']/statBases</xpath>
+
+        <value>
+          <MeleeDodgeChance>0.09</MeleeDodgeChance>
+						<MeleeCritChance>0.05</MeleeCritChance>
+						<MeleeParryChance>0.03</MeleeParryChance>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Seal']/tools</xpath>
+
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>left fore-flipper</label>
+              <capacities>
+                <li>Scratch</li>
+              </capacities>
+              <power>9.4</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetration>0.1</armorPenetration>
+              <linkedBodyPartsGroup>AEXP_ForeFlipers</linkedBodyPartsGroup>
+            </li>
+
+            <li Class="CombatExtended.ToolCE">
+              <label>right fore-flipper</label>
+              <capacities>
+                <li>Scratch</li>
+              </capacities>
+              <power>9.4</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetration>0.1</armorPenetration>
+              <linkedBodyPartsGroup>AEXP_ForeFlipers</linkedBodyPartsGroup>
+            </li>
+
+            <li Class="CombatExtended.ToolCE">
+              <capacities>
+                <li>Bite</li>
+              </capacities>
+              <power>12.5</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetration>0.15</armorPenetration>
+              <chanceFactor>0.7</chanceFactor>
+              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>6</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetration>0.1</armorPenetration>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

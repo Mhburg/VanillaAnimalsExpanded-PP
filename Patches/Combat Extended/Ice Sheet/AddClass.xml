@@ -11,23 +11,16 @@
       </li>
 
       <li Class='ModCheck.isModLoaded'>
-        <modName>Vanilla Animals Expanded — Extreme Desert</modName>
-      </li>
-
-      <!-- Birdlike -->
-      <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Camel']</xpath>
-
-        <value>
-          <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>BirdLike</bodyShape>
-          </li>
-        </value>
+        <modName>Vanilla Animals Expanded — Ice Sheet</modName>
       </li>
 
       <!-- Quadruped Low-->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Megascorpion']</xpath>
+        <xpath>
+          Defs/ThingDef[
+            defName = 'AEXP_Seal' or
+            defNAme = 'AEXP_Walrus']
+          </xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -36,13 +29,13 @@
         </value>
       </li>
 
-      <!-- Serpentine -->
+      <!-- Birdlike -->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Rattlesnake']</xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Penguin']</xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>Serpentine</bodyShape>
+            <bodyShape>Birdlike</bodyShape>
           </li>
         </value>
       </li>

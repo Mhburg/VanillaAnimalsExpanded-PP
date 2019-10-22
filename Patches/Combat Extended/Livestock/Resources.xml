@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
+
+    <operations>
+      <!-- Check for CE and VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Livestock</modName>
+      </li>
+
+      <!-- Brownfur Leather -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.28</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Blunt</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+
+
+      <!-- Bison Wool -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.28</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Blunt</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+
+
+      <!-- Sheep Wool -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Blunt</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+
+      <!-- Yak Wool -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Blunt</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.13</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+
+      <!-- Guinea Pig Leather -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.23</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBasesStuffPower_Armor_Blunt/</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.115</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>

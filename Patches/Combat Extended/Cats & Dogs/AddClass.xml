@@ -21,20 +21,7 @@
             defName = 'AEXP_Rottweiler' or
             defName = 'AEXP_GermanShepherd' or
             defName = 'AEXP_GreatDane' or
-            defName = 'AEXP_Poodle']
-        </xpath>
-
-        <value>
-          <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>Quadruped</bodyShape>
-          </li>
-        </value>
-      </li>
-
-      <!-- Quadruped Low -->
-      <li Class='PatchOperationAddModExtension'>
-        <xpath>
-          Defs/ThingDef[
+            defName = 'AEXP_Poodle' or
             defName = 'AEXP_Beagle' or
             defName = 'AEXP_Chihuahua' or
             defName = 'AEXP_Corgi' or
@@ -56,7 +43,7 @@
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>QuadrupedLow</bodyShape>
+            <bodyShape>Quadruped</bodyShape>
           </li>
         </value>
       </li>

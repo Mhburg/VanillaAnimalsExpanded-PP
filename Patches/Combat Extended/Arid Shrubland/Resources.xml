@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationSequence'>
+    <success>Always</success>
+
+    <operations>
+      <!-- Check for CE and VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Arid Shrubland</modName>
+      </li>
+
+      <!-- Hippo -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Hippopotamus']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Hippopotamus']/statBases/StuffPower_Armor_Blunt</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.130</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+
+      <!-- Wildebeest -->
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Wildebeest']/statBases/StuffPower_Armor_Sharp</xpath>
+
+        <value>
+          <StuffPower_Armor_Sharp>0.33</StuffPower_Armor_Sharp>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Wildebeest']/statBases/StuffPower_Armor_Blunt</xpath>
+
+        <value>
+          <StuffPower_Armor_Blunt>0.175</StuffPower_Armor_Blunt>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>
