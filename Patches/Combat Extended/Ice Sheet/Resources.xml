@@ -37,17 +37,17 @@
       <li Class='PatchOperationReplace'>
         <xpath>Defs/ThingDefs[defName= 'AEXP_Leather_Pinniped']/statBases/StuffPower_Armor_Sharp</xpath>
 
-        <values>
+        <value>
           <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
-        </values>
+        </value>
       </li>
 
       <li Class='PatchOperationReplace'>
         <xpath>Defs/ThingDefs[defName= 'AEXP_Leather_Pinniped']/statBases/StuffPower_Armor_Blunt</xpath>
 
-        <values>
+        <value>
           <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
-        </values>
+        </value>
       </li>
     </operations>
   </Operation>
