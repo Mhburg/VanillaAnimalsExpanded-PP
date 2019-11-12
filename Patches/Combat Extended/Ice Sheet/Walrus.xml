@@ -37,7 +37,7 @@
               <cooldownTime>2</cooldownTime>
               <armorPenetration>0.15</armorPenetration>
               <chanceFactor>0.7</chanceFactor>
-              <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
 
             <li Class="CombatExtended.ToolCE">
