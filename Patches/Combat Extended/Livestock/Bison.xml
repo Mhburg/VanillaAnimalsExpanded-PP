@@ -37,7 +37,7 @@
                 <li>Poke</li>
               </capacities>
               <power>14</power>
-              <cooldownTime>1</cooldownTime>
+              <cooldownTime>2</cooldownTime>
               <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
               <armorPenetrationBlunt>3</armorPenetrationBlunt>
             </li>
@@ -49,7 +49,7 @@
                 <li>Poke</li>
               </capacities>
               <power>14</power>
-              <cooldownTime>1</cooldownTime>
+              <cooldownTime>2</cooldownTime>
               <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
               <armorPenetrationBlunt>3</armorPenetrationBlunt>
             </li>
