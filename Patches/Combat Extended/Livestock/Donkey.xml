@@ -36,10 +36,10 @@
                 <li>Blunt</li>
                 <li>Poke</li>
               </capacities>
-              <power>8</power>
+              <power>11</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
               <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>2.4</armorPenetrationBlunt>
             </li>
 
             <li Class='CombatExtended.ToolCE'>
@@ -48,21 +48,10 @@
                 <li>Blunt</li>
                 <li>Poke</li>
               </capacities>
-              <power>8</power>
+              <power>11</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
               <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-            </li>
-
-            <li Class='CombatExtended.ToolCE'>
-              <label>bite</label>
-              <capacities>
-                <li>Bite</li>
-              </capacities>
-              <power>5</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.5</armorPenetration>
-              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>2.4</armorPenetrationBlunt>
             </li>
 
             <li Class="CombatExtended.ToolCE">
@@ -70,10 +59,10 @@
               <capacities>
                 <li>Blunt</li>
               </capacities>
-              <power>12</power>
+              <power>16</power>
               <cooldownTime>2.9</cooldownTime>
-              <armorPenetration>0.1</armorPenetration>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>3</armorPenetrationBlunt>
             </li>
           </tools>
         </value>
