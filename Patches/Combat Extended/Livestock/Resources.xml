@@ -16,18 +16,18 @@
 
       <!-- Brownfur Leather -->
       <li Class='PatchOperationReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
-          <StuffPower_Armor_Sharp>0.28</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Sharp>0.03</StuffPower_Armor_Sharp>
         </value>
       </li>
 
       <li Class='PatchOperationReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Blunt</xpath>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
-          <StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Blunt>0.024</StuffPower_Armor_Blunt>
         </value>
       </li>
 
@@ -37,7 +37,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
-          <StuffPower_Armor_Sharp>0.28</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Sharp>0.07</StuffPower_Armor_Sharp>
         </value>
       </li>
 
@@ -45,7 +45,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
-          <StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Blunt>0.056</StuffPower_Armor_Blunt>
         </value>
       </li>
 
@@ -55,7 +55,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
-          <StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Sharp>0.04</StuffPower_Armor_Sharp>
         </value>
       </li>
 
@@ -63,7 +63,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
-          <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
         </value>
       </li>
 
@@ -72,7 +72,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
-          <StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
         </value>
       </li>
 
@@ -80,7 +80,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
-          <StuffPower_Armor_Blunt>0.13</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
         </value>
       </li>
 
@@ -89,7 +89,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
-          <StuffPower_Armor_Sharp>0.23</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Sharp>0.03</StuffPower_Armor_Sharp>
         </value>
       </li>
 
@@ -97,7 +97,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBasesStuffPower_Armor_Blunt/</xpath>
 
         <value>
-          <StuffPower_Armor_Blunt>0.115</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Blunt>0.02</StuffPower_Armor_Blunt>
         </value>
       </li>
     </operations>
