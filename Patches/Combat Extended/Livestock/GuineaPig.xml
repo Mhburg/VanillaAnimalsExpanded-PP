@@ -37,8 +37,9 @@
               </capacities>
               <power>3.6</power>
               <cooldownTime>1.5</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
               <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.025</armorPenetrationBlunt>
+              <armorPenetrationSharp>0.01</armorPenetrationSharp>
             </li>
 
             <li Class='CombatExtended.ToolCE'>
@@ -48,8 +49,9 @@
               </capacities>
               <power>3.6</power>
               <cooldownTime>1.5</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
               <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.025</armorPenetrationBlunt>
+              <armorPenetrationSharp>0.01</armorPenetrationSharp>
             </li>
 
             <li Class='CombatExtended.ToolCE'>
@@ -59,8 +61,8 @@
               </capacities>
               <power>5.8</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.5</armorPenetration>
               <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.11</armorPenetrationSharp>
             </li>
 
             <li Class="CombatExtended.ToolCE">
@@ -70,8 +72,8 @@
               </capacities>
               <power>2</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.1</armorPenetration>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.025</armorPenetrationBlunt>
             </li>
           </tools>
         </value>
