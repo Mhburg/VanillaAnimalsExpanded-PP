@@ -54,6 +54,18 @@
               <armorPenetrationBlunt>3</armorPenetrationBlunt>
             </li>
 
+            <li Class='CombatExtended.ToolCE'>
+              <label>bite</label>
+              <capacities>
+                <li>Bite</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.11</armorPenetrationSharp>
+              <armorPenetrationBlunt>2.8</armorPenetrationBlunt>
+            </li>
+
             <li Class="CombatExtended.ToolCE">
               <label>head</label>
               <capacities>
