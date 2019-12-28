@@ -31,6 +31,17 @@
         <value>
           <tools>
             <li Class='CombatExtended.ToolCE'>
+              <label>claws</label>
+              <capacities>
+                <li>Scratch</li>
+              </capacities>
+              <power>3</power>
+              <cooldownTime>1.5</cooldownTime>
+              <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>1</armorPenetrationBlunt>
+            </li>
+            
+            <li Class='CombatExtended.ToolCE'>
               <label>beak</label>
               <capacities>
                 <li>Bite</li>
@@ -38,7 +49,7 @@
               <power>4</power>
               <cooldownTime>2</cooldownTime>
               <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-              <armorPenetrationBlunt>1</armorPenetrationBlunt>
+              <armorPenetrationSharp>0.1</armorPenetrationSharp>
             </li>
 
             <li Class="CombatExtended.ToolCE">
