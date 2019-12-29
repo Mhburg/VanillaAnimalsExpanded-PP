@@ -19,6 +19,7 @@
           Defs/ThingDef[
           defName = 'AEXP_Gorilla' or
           defName = 'AEXP_Jaguar' or
+          defName = 'AEXP_Tiger' or
           defName = 'AEXP_Tapir']
         </xpath>
 
@@ -42,9 +43,7 @@
 
       <!-- Humanoid -->
       <li Class='PatchOperationAddModExtension'>
-        <xpath>Defs/ThingDef[
-               defName = 'AEXP_Gorilla' or
-               defName = 'AEXP_Mandrill]
+        <xpath>Defs/ThingDef[defName = 'AEXP_Mandrill']
         </xpath>
 
         <value>
