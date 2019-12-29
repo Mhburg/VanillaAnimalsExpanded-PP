@@ -29,7 +29,7 @@
 
         <value>
           <tools>
-            <li>
+            <li Class="CombatExtended.ToolCE">
               <label>left fist</label>
               <capacities>
                 <li>Blunt</li>
@@ -47,8 +47,8 @@
               </surpriseAttack>
               <armorPenetrationBlunt>6</armorPenetrationBlunt>
             </li>
-            
-            <li>
+
+            <li Class="CombatExtended.ToolCE">
               <label>right fist</label>
               <capacities>
                 <li>Blunt</li>
@@ -66,8 +66,8 @@
               </surpriseAttack>
               <armorPenetrationBlunt>6</armorPenetrationBlunt>
             </li>
-            
-            <li>
+
+            <li Class="CombatExtended.ToolCE">
               <capacities>
                 <li>Bite</li>
               </capacities>
@@ -77,8 +77,8 @@
               <armorPenetrationSharp>0.12</armorPenetrationSharp>
               <armorPenetrationBlunt>9.8</armorPenetrationBlunt>
             </li>
-            
-            <li>
+
+            <li Class="CombatExtended.ToolCE">
               <label>head</label>
               <capacities>
                 <li>Blunt</li>

@@ -30,7 +30,7 @@
         <value>
           <tools>
 
-            <li>
+            <li Class="CombatExtended.ToolCE">
               <capacities>
                 <li>Bite</li>
               </capacities>
@@ -41,7 +41,7 @@
               <armorPenetrationBlunt>0.6</armorPenetrationBlunt>
             </li>
 
-            <li>
+            <li Class="CombatExtended.ToolCE">
               <label>head</label>
               <capacities>
                 <li>Blunt</li>
