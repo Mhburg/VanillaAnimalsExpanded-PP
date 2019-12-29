@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Patch>
+
+  <Operation Class='PatchOperationSequence'>
+
+    <operations>
+      <!-- Check for CE & VAE -->
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Combat Extended</modName>
+      </li>
+
+      <li Class='ModCheck.isModLoaded'>
+        <modName>Vanilla Animals Expanded — Vanilla Animals Expanded — Tropical Rainforest</modName>
+      </li>
+
+      <!-- Tapir -->
+      <li Class='PatchOperationAdd'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Tapir']/statBases</xpath>
+
+        <value>
+          <MeleeDodgeChance>0.11</MeleeDodgeChance>
+          <MeleeCritChance>0.16</MeleeCritChance>
+          <MeleeParryChance>0.08</MeleeParryChance>
+        </value>
+      </li>
+
+      <li Class='PatchOperationReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Tapir']/tools</xpath>
+
+        <value>
+          <tools>
+
+            <li>
+              <capacities>
+                <li>Bite</li>
+              </capacities>
+              <power>7</power>
+              <cooldownTime>1.6</cooldownTime>
+              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.02</armorPenetrationSharp>
+              <armorPenetrationBlunt>0.6</armorPenetrationBlunt>
+            </li>
+
+            <li>
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>6</power>
+              <cooldownTime>2.1</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+              <armorPenetrationBlunt>2</armorPenetrationBlunt>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
