@@ -2,7 +2,6 @@
 <Patch>
 
   <Operation Class='PatchOperationSequence'>
-    <success>Always</success>
 
     <operations>
       <!-- Check for CE & VAE -->
@@ -19,9 +18,9 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Moose']/statBases</xpath>
 
         <value>
-          <MeleeDodgeChance>0.08</MeleeDodgeChance>
-          <MeleeCritChance>0.18</MeleeCritChance>
-          <MeleeParryChance>0.15</MeleeParryChance>
+          <MeleeDodgeChance>0.07</MeleeDodgeChance>
+          <MeleeCritChance>0.14</MeleeCritChance>
+          <MeleeParryChance>0.14</MeleeParryChance>
         </value>
       </li>
 
@@ -31,37 +30,14 @@
         <value>
           <tools>
             <li Class='CombatExtended.ToolCE'>
-              <label>left hoof</label>
+              <label>bite</label>
               <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
+                <li>BiteBlunt</li>
               </capacities>
-              <power>15</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
-              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-            </li>
-
-            <li Class='CombatExtended.ToolCE'>
-              <label>right hoof</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>15</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
-              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-            </li>
-
-            <li Class='CombatExtended.ToolCE'>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>12</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.5</armorPenetration>
+              <power>1</power>
+              <cooldownTime>1</cooldownTime>
               <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.1</armorPenetrationBlunt>
             </li>
 
             <li Class="CombatExtended.ToolCE">
@@ -69,12 +45,13 @@
               <capacities>
                 <li>Blunt</li>
               </capacities>
-              <power>13</power>
-              <cooldownTime>2.6</cooldownTime>
-              <armorPenetration>0.1</armorPenetration>
+              <power>8</power>
+              <cooldownTime>1.7</cooldownTime>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>2.88</armorPenetrationBlunt>
             </li>
           </tools>
+
         </value>
       </li>
     </operations>
