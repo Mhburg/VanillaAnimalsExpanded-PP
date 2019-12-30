@@ -17,7 +17,9 @@
       <!-- Quadruped -->
       <li Class='PatchOperationAddModExtension'>
         <xpath>
-          Defs/ThingDef[defName = 'AEXP_ArticCoyote']
+          Defs/ThingDef[
+            defName = 'AEXP_ArticCoyote' or
+            defName = 'AEXP_BlcakBear']
         </xpath>
 
         <value>
