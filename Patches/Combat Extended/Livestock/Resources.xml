@@ -2,7 +2,6 @@
 <Patch>
 
   <Operation Class='PatchOperationSequence'>
-    <success>Always</success>
 
     <operations>
       <!-- Check for CE and VAE -->
@@ -15,7 +14,7 @@
       </li>
 
       <!-- Brownfur Leather -->
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
@@ -23,7 +22,7 @@
         </value>
       </li>
 
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
@@ -33,7 +32,7 @@
 
 
       <!-- Bison Wool -->
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
@@ -41,7 +40,7 @@
         </value>
       </li>
 
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
@@ -51,7 +50,7 @@
 
 
       <!-- Sheep Wool -->
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
@@ -59,7 +58,7 @@
         </value>
       </li>
 
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
@@ -68,7 +67,7 @@
       </li>
 
       <!-- Yak Wool -->
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
@@ -76,7 +75,7 @@
         </value>
       </li>
 
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Blunt</xpath>
 
         <value>
@@ -85,7 +84,7 @@
       </li>
 
       <!-- Guinea Pig Leather -->
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBases/StuffPower_Armor_Sharp</xpath>
 
         <value>
@@ -93,7 +92,7 @@
         </value>
       </li>
 
-      <li Class='PatchOperationReplace'>
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBasesStuffPower_Armor_Blunt/</xpath>
 
         <value>
