@@ -25,7 +25,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Hippopotamus']/statBases</xpath>
 
         <key>StuffPower_Armor_Blunt</key>
-        <value>0.130</value>
+        <value>0.08</value>
       </li>
 
       <!-- Wildebeest -->
@@ -33,14 +33,14 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Wildebeest']/statBases</xpath>
         
         <key>StuffPower_Armor_Sharp</key>
-        <value>0.33</value>
+        <value>0.05</value>
       </li>
 
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Wildebeest']/statBases</xpath>
         
         <key>StuffPower_Armor_Blunt</key>
-        <value>0.175</value>
+        <value>0.04</value>
       </li>
     </operations>
   </Operation>

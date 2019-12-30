@@ -13,7 +13,7 @@
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Tiger']/statBases</xpath>
         <key>StuffPower_Armor_Blunt</key>
-        <value>0.7</value>
+        <value>0.07</value>
       </li>
     </operations>
   </Operation>
