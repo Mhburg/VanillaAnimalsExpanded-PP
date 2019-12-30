@@ -13,7 +13,7 @@
         </value>
       </li>
 
-      <li Class='PatchOperationReplace'>
+      <li Class='PatchOperationAdd'>
         <xpath>Defs/ThingDef[defName = 'AEXP_BlackBear']/tools</xpath>
 
         <value>
