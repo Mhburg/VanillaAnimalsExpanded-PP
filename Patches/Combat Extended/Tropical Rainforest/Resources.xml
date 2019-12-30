@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class='PatchOperationSequence'>
+    <operations>
+      
+      <!-- Tiger leather -->
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Tiger']/statBases</xpath>
+        <key>StuffPower_Armor_Sharp</key>
+        <value>0.3</value>
+      </li>
+
+      <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Tiger']/statBases</xpath>
+        <key>StuffPower_Armor_Blunt</key>
+        <value>0.7</value>
+      </li>
+    </operations>
+  </Operation>
+             
+</Patch>
