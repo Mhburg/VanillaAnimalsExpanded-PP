@@ -37,7 +37,7 @@
               </capacities>
               <power>8</power>
               <cooldownTime>1.5</cooldownTime>
-              <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+              <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
               <armorPenetrationSharp>0.1</armorPenetrationSharp>
               <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
             </li>
@@ -49,7 +49,7 @@
               </capacities>
               <power>8</power>
               <cooldownTime>1.5</cooldownTime>
-              <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+              <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
               <armorPenetrationSharp>0.1</armorPenetrationSharp>
               <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
             </li>
