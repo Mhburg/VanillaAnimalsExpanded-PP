@@ -15,89 +15,69 @@
 
       <!-- Brownfur Leather -->
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases/StuffPower_Armor_Sharp</xpath>
-
-        <value>
-          <StuffPower_Armor_Sharp>0.03</StuffPower_Armor_Sharp>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases</xpath>
+        <key>StuffPower_Armor_Sharp</key>
+        <value>0.03</value>
       </li>
 
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases/StuffPower_Armor_Blunt</xpath>
-
-        <value>
-          <StuffPower_Armor_Blunt>0.024</StuffPower_Armor_Blunt>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_Brownfur']/statBases</xpath>
+        <key>StuffPower_Armor_Blunt</key>
+        <value>0.024</value>
       </li>
 
 
       <!-- Bison Wool -->
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Sharp</xpath>
-
-        <value>
-          <StuffPower_Armor_Sharp>0.07</StuffPower_Armor_Sharp>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases</xpath>
+        <key>StuffPower_Armor_Sharp</key>
+        <value>0.07</value>
       </li>
 
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases/StuffPower_Armor_Blunt</xpath>
-
-        <value>
-          <StuffPower_Armor_Blunt>0.056</StuffPower_Armor_Blunt>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolBison']/statBases</xpath>
+        <key>StuffPower_Armor_Blunt</key>
+        <value>0.056</value>
       </li>
 
 
       <!-- Sheep Wool -->
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Sharp</xpath>
-
-        <value>
-          <StuffPower_Armor_Sharp>0.04</StuffPower_Armor_Sharp>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases</xpath>
+        <key>StuffPower_Armor_Sharp</key>
+        <value>0.04</value>
       </li>
 
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases/StuffPower_Armor_Blunt</xpath>
-
-        <value>
-          <StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolSheep']/statBases</xpath>
+        <key>StuffPower_Armor_Blunt</key>
+        <value>0.04</value>
       </li>
 
       <!-- Yak Wool -->
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Sharp</xpath>
-
-        <value>
-          <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases</xpath>
+        <key>StuffPower_Armor_Sharp</key>
+        <value>0.05</value>
       </li>
 
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases/StuffPower_Armor_Blunt</xpath>
-
-        <value>
-          <StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_WoolYak']/statBases</xpath>
+        <key>StuffPower_Armor_Blunt</key>
+        <value>0.04</value>
       </li>
 
       <!-- Guinea Pig Leather -->
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBases/StuffPower_Armor_Sharp</xpath>
-
-        <value>
-          <StuffPower_Armor_Sharp>0.03</StuffPower_Armor_Sharp>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBases</xpath>
+        <key>StuffPower_Armor_Sharp</key>
+        <value>0.03</value>
       </li>
 
       <li Class='VAEPPUtility.PatchOperationAddOrReplace'>
-        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBasesStuffPower_Armor_Blunt/</xpath>
-
-        <value>
-          <StuffPower_Armor_Blunt>0.02</StuffPower_Armor_Blunt>
-        </value>
+        <xpath>Defs/ThingDef[defName = 'AEXP_Leather_GuineaPig']/statBases</xpath>
+        <key>StuffPower_Armor_Blunt</key>
+        <value>0.02</value>
       </li>
     </operations>
   </Operation>
