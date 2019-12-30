@@ -19,8 +19,8 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Muskox']/statBases</xpath>
 
         <value>
-          <MeleeDodgeChance>0.08</MeleeDodgeChance>
-          <MeleeCritChance>0.18</MeleeCritChance>
+          <MeleeDodgeChance>0.17</MeleeDodgeChance>
+          <MeleeCritChance>0.25</MeleeCritChance>
           <MeleeParryChance>0.15</MeleeParryChance>
         </value>
       </li>
@@ -31,38 +31,14 @@
         <value>
           <tools>
             <li Class='CombatExtended.ToolCE'>
-              <label>left hoof</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>8</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
-              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-            </li>
-
-            <li Class='CombatExtended.ToolCE'>
-              <label>right hoof</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>8</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.2</armorPenetration>
-              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-            </li>
-
-            <li Class='CombatExtended.ToolCE'>
               <label>bite</label>
               <capacities>
-                <li>Bite</li>
+                <li>BiteBlunt</li>
               </capacities>
-              <power>10</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.5</armorPenetration>
+              <power>1</power>
+              <cooldownTime>1</cooldownTime>
               <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.1</armorPenetrationBlunt>
             </li>
 
             <li Class="CombatExtended.ToolCE">
@@ -70,10 +46,10 @@
               <capacities>
                 <li>Blunt</li>
               </capacities>
-              <power>17</power>
-              <cooldownTime>2.6</cooldownTime>
-              <armorPenetration>0.1</armorPenetration>
+              <power>6</power>
+              <cooldownTime>1.2</cooldownTime>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>2</armorPenetrationBlunt>
             </li>
           </tools>
         </value>
