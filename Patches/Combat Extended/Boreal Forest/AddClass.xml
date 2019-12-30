@@ -2,7 +2,6 @@
 <Patch>
 
   <Operation Class='PatchOperationSequence'>
-    <success>Always</success>
 
     <operations>
       <!-- Check for CE and VAE -->
@@ -18,8 +17,8 @@
       <li Class='PatchOperationAddModExtension'>
         <xpath>
           Defs/ThingDef[
-            defName = 'AEXP_ArticCoyote' or
-            defName = 'AEXP_BlcakBear']
+            defName = 'AEXP_ArcticCoyote' or
+            defName = 'AEXP_BlackBear']
         </xpath>
 
         <value>
