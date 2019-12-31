@@ -2,7 +2,6 @@
 <Patch>
 
   <Operation Class='PatchOperationSequence'>
-    <success>Always</success>
 
     <operations>
       <!-- Check for CE & VAE -->
@@ -14,13 +13,13 @@
         <modName>Vanilla Animals Expanded — Extreme Desert</modName>
       </li>
 
-      <!-- Birdlike -->
+      <!-- Quadruped -->
       <li Class='PatchOperationAddModExtension'>
         <xpath>Defs/ThingDef[defName = 'AEXP_Camel']</xpath>
 
         <value>
           <li Class="CombatExtended.RacePropertiesExtensionCE">
-            <bodyShape>Birdlike</bodyShape>
+            <bodyShape>Quadruped</bodyShape>
           </li>
         </value>
       </li>
