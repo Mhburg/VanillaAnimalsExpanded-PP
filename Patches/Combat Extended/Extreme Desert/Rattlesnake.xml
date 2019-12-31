@@ -19,9 +19,9 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Rattlesnake']/statBases</xpath>
 
         <value>
-          <MeleeDodgeChance>0.14</MeleeDodgeChance>
-          <MeleeCritChance>0.12</MeleeCritChance>
-          <MeleeParryChance>0.07</MeleeParryChance>
+          <MeleeDodgeChance>0.19</MeleeDodgeChance>
+          <MeleeCritChance>0.18</MeleeCritChance>
+          <MeleeParryChance>0.17</MeleeParryChance>
         </value>
       </li>
 
@@ -37,8 +37,9 @@
               </capacities>
               <power>12</power>
               <cooldownTime>2.4</cooldownTime>
-              <armorPenetration>0.19</armorPenetration>
               <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+              <armorPenetrationSharp>1.2</armorPenetrationSharp>
+              <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
               <surpriseAttack>
                 <extraMeleeDamages>
                   <li>
@@ -56,8 +57,10 @@
               </capacities>
               <power>3</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.10</armorPenetration>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+              <armorPenetrationBlunt>0.1</armorPenetrationBlunt>
             </li>
           </tools>
         </value>
