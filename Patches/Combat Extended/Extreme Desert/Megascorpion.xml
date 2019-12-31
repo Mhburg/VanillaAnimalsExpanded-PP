@@ -19,7 +19,7 @@
         <xpath>Defs/ThingDef[defName = 'AEXP_Megascorpion']/statBases</xpath>
 
         <value>
-          <MeleeDodgeChance>0.12</MeleeDodgeChance>
+          <MeleeDodgeChance>0.19</MeleeDodgeChance>
           <MeleeCritChance>0.33</MeleeCritChance>
           <MeleeParryChance>0.17</MeleeParryChance>
         </value>
@@ -36,9 +36,10 @@
                 <li>AEXP_MegascorpionVenomousBite</li>
               </capacities>
               <power>12</power>
-              <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.20</armorPenetration>
+              <cooldownTime>1.2</cooldownTime>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.2</armorPenetrationSharp>
+              <armorPenetrationBlunt>0.13</armorPenetrationBlunt>
               <surpriseAttack>
                 <extraMeleeDamages>
                   <li>
@@ -56,8 +57,9 @@
               </capacities>
               <power>5</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.13</armorPenetration>
               <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.05</armorPenetrationSharp>
+              <armorPenetrationBlunt>0.1</armorPenetrationBlunt>
             </li>
 
             <li Class="CombatExtended.ToolCE">
@@ -67,8 +69,8 @@
               </capacities>
               <power>4</power>
               <cooldownTime>2</cooldownTime>
-              <armorPenetration>0.6</armorPenetration>
               <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.11</armorPenetrationBlunt>
             </li>
           </tools>
         </value>
